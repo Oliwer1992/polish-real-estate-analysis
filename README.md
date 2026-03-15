@@ -3,6 +3,11 @@
 ## 📌 Project Overview
 This project presents an end-to-end analytical pipeline for the Polish residential real estate market. The workflow covers the entire data lifecycle: from extracting and inspecting raw data (ETL) using SQL, through meticulous Data Cleaning and comprehensive Exploratory Data Analysis (EDA) in pandas, to advanced hypothesis testing and Econometric Modeling (Statistical Inference) to understand the underlying factors driving property prices.
 
+## 📊 Dataset Information
+The data used in this analysis comes from the **Apartment Prices in Poland** dataset available on Kaggle. It contains historical information about apartment rental prices, locations, and characteristics across 15  major Polish cities between August 2023 and June 2024.
+
+* **Source:** https://www.kaggle.com/datasets/krzysztofjamroz/apartment-prices-in-poland 
+  
 ## 🛠️ Tech Stack & Tools
 * **Languages:** Python, SQL (SQLite3)
 * **Data Manipulation:** `pandas`, `numpy`, `os`, `glob`
