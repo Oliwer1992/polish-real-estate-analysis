@@ -1,3 +1,4 @@
-Data/
 *.db
 .ipynb_checkpoints/
+__pycache__/
+cleaned_rent_data.csv

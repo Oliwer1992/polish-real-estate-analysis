@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import scipy.stats as stats
 class DataVisualizer:
     def __init__(self, dataframe):
         self.df = dataframe.copy()
@@ -93,4 +93,17 @@ class DataVisualizer:
         plt.title(title)
         plt.xticks(rotation=45)
         plt.tight_layout()
+        plt.show()
+    def scatterplot_test(self,pred,res):
+        plt.figure(figsize=(12,10))
+        plt.scatter(pred,res,alpha=0.1)
+        plt.axhline(y=0, color='r', linestyle='--')
+        plt.title('Residuals vs Predicted')
+        plt.xlabel('Predicted Price')
+        plt.ylabel('Residuals')
+        plt.show()
+    def probplot(self,res):
+        plt.figure(figsize=(12,10))
+        stats.probplot(res, dist='norm', plot=plt)
+        plt.title('Normal Q-Q Plot')
         plt.show()
